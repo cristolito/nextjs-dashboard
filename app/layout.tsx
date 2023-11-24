@@ -1,3 +1,5 @@
+import '@/app/ui/global.css';
+import { cardo } from '@/app/ui/font/fonts';
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${cardo.className} antialiased`}>{children}</body>
     </html>
   );
 }
